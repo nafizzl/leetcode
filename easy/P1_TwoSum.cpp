@@ -8,13 +8,13 @@ You can return the answer in any order.
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> answer;
+        vector<int> answer; // instantiate a vector to hold the answers
         for (int i = 0; i < nums.size(); i++){
-            for (int j = i + 1; j < nums.size(); j++){
+            for (int j = i + 1; j < nums.size(); j++){ // this solution implements nested loops for O(n^2) runtime
                 if (nums.at(i) + nums.at(j) == target) {
-                    answer.clear();
+                    answer.clear();  
                     answer.push_back(i);
-                    answer.push_back(j);
+                    answer.push_back(j);  // clear whatever's inside the answer vector and replace with the new answers
                 }
             }
         }
