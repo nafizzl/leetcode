@@ -12,14 +12,14 @@ class P389_FindtheDifference(object):
                 if (check_List[counter1] == checked_List[counter2]):
                     checked_List[counter2] = " "
                 counter2 += 1
-            counter1 += 1 // iterate through both arrays, if char in s is found in t, change to empty char, at the 
-                          // end, there will be only one empty char left
+            counter1 += 1 # iterate through both arrays, if char in s is found in t, change to empty char, at the 
+                          # end, there will be only one empty char left
         
         counter3 = 0
         added = " "
         while(counter3 < len(checked_List)):
             if (checked_List[counter3] != " "): 
-                 added = checked_List[counter3]  // added will contain the extra char in t
+                 added = checked_List[counter3]  # added will contain the extra char in t
             counter3 += 1
 
         return added
