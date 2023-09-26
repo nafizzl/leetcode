@@ -1,9 +1,9 @@
-class P389_FindtheDifference(object):
+class Solution(object):
     def findTheDifference(self, s, t):
         check = s
         checked = t
         check_List = list(s)
-        checked_List = list(t) // convert strings to char arrays
+        checked_List = list(t) # convert strings to char arrays
 
         counter1 = 0;
         counter2 = 0;
